@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Car Image Gallery</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #212121;  /* Dark background color */
+            color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            margin: 40px 0;
+            color: #fff;
+            font-family: 'Georgia', serif;
+            letter-spacing: 2px;
+        }
+
+        /* Gallery Container */
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+            gap: 30px;
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Figure (Individual image container) */
+        figure {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        figure:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8); /* Enhance shadow on hover */
+        }
+
+        /* Image Styling */
+        figure img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.4s ease;
+        }
+
+        figure:hover img {
+            transform: scale(1.1); /* Zoom in effect on hover */
+        }
+
+        /* Caption Styling */
+        figcaption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 15px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        figure:hover figcaption {
+            opacity: 1;  /* Fade in the caption on hover */
+        }
+
+        /* Anchor Tag Styling */
+        a {
+            text-decoration: none;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Add a subtle hover effect on all links */
+        a:hover {
+            opacity: 0.8;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Luxury Car Image Gallery</h1>
+    <section class="gallery-container">
+        <figure>
+            <a href="https://www.bmw.com/en/index.html">
+                <img src="./efdda5b9-65b8-4ebd-82b7-c93ea7888143.jpg" alt="BMW">
+                <figcaption>BMW</figcaption>
+            </a>
+        </figure>
+        <figure>
+            <a href="https://www.astonmartin.com/en">
+                <img src="./Aston Martin DB5_ The Ultimate Classic Car Experience _ James Bond's Aston Martin _ Bullet Proof.jpg" alt="Aston Martin">
+                <figcaption>Aston Martin</figcaption>
+            </a>
+        </figure>
+        <figure>
+            <a href="https://www.bentleymotors.com/en.html">
+                <img src="./Bentley.jpg" alt="Bentley">
+                <figcaption>Bentley</figcaption>
+            </a>
+        </figure>
+        <figure>
+            <a href="https://www.mercedes-benz.com/en/">
+                <img src="./benz.jpg" alt="Mercedes-Benz">
+                <figcaption>Mercedes-Benz</figcaption>
+            </a>
+        </figure>
+        <figure>
+            <a href="https://www.porsche.com/middle-east/_india_/?cs_redirect=1">
+                <img src="./download (1).jpg" alt="Porsche">
+                <figcaption>Porsche</figcaption>
+            </a>
+        </figure>
+        <figure>
+            <a href="https://www.bugatti.com">
+                <img src="./download.jpg" alt="Bugatti">
+                <figcaption>Bugatti</figcaption>
+            </a>
+        </figure>
+    </section>
+
+</body>
+</html>
